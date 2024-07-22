@@ -80,6 +80,141 @@ Weighted Avg Precision, Recall, F1-Score: 0.82, 0.85, 0.81
 # Visualization: 
 Create visualizations to illustrate the distribution of the target variable and the relationships between features and the target.
 Optimization: Fine-tune the models to improve their performance and select the best model for predicting diabetes status
+![image](https://github.com/user-attachments/assets/7c3f4ca6-050a-4259-8609-e533798253ec)
+observations:
+
+Categories: There are two categories represented on the x-axis:
+0.0: Likely indicating individuals who do not have diabetes.
+1.0: Likely indicating individuals who have diabetes.
+
+![image](https://github.com/user-attachments/assets/bca1d174-5417-4f2d-a3db-ea9ea1b3d8a7)
+The chart consists of six bar plots showing the count of diabetes cases (Diabetes_binary) by various past medical conditions: HighBP, HighChol, CholCheck, Smoker, Stroke, and HeartDiseaseorAttack.
+
+HighBP (High Blood Pressure):
+
+Green bars (0.0) indicate individuals without diabetes, and orange bars (1.0) indicate those with diabetes.
+Most individuals do not have high blood pressure or diabetes.
+The black line shows the proportion of diabetics.
+HighChol (High Cholesterol):
+
+Similar to HighBP, with most individuals not having high cholesterol or diabetes.
+CholCheck (Cholesterol Check):
+
+Shows counts based on whether individuals had a cholesterol check, segmented by diabetes status.
+Most who had a cholesterol check do not have diabetes.
+Smoker:
+
+Displays the distribution of smokers and non-smokers by diabetes status.
+Non-smokers without diabetes have the highest count.
+Stroke:
+
+Shows counts of individuals with and without a stroke, segmented by diabetes status.
+Most individuals without a stroke do not have diabetes.
+HeartDiseaseorAttack:
+
+Displays counts based on history of heart disease or attack, segmented by diabetes status.
+Most individuals without heart disease or attack do not have diabetes.
+In all plots, green bars (0.0) consistently show a larger group compared to orange bars (1.0), indicating more individuals without diabetes. The black lines highlight the proportion of diabetics in each category, providing insight into the relationship between these medical conditions and diabetes.
+
+![image](https://github.com/user-attachments/assets/45a4f959-002c-4c5a-af6e-c91eed29d475)
+
+This chart contains eight bar plots, each illustrating the count of diabetes cases (Diabetes_binary) by various demographic and lifestyle factors: Age, Sex, Education, Income, PhysActivity, Fruits, Veggies, and HvyAlcoholConsump.
+
+# Age:
+
+The distribution of diabetes cases by age, segmented into different age groups.
+Green bars (0.0) indicate non-diabetics, and orange bars (1.0) indicate diabetics.
+The black line shows the proportion of diabetics across age groups, with a noticeable increase in older age groups.
+# Sex:
+Shows the count of diabetes cases by sex.
+More individuals without diabetes in both male and female groups.
+# Education:
+Displays the distribution of diabetes cases by education level.
+The highest counts are among individuals with lower education levels.
+# Income:
+Shows the count of diabetes cases by income level.
+Higher income levels generally have fewer diabetes cases.
+# PhysActivity (Physical Activity):
+
+Illustrates the count of diabetes cases based on physical activity.
+Individuals with physical activity (1.0) have fewer diabetes cases.
+# Fruits:
+
+Shows the distribution of diabetes cases based on fruit consumption.
+More individuals who consume fruits (1.0) do not have diabetes.
+# Veggies:
+
+Displays the count of diabetes cases based on vegetable consumption.
+Higher vegetable consumption (1.0) is associated with fewer diabetes cases.
+# HvyAlcoholConsump (Heavy Alcohol Consumption):
+
+Shows the distribution of diabetes cases based on heavy alcohol consumption.
+Higher counts of non-diabetics are seen among those with heavy alcohol consumption (1.0).
+In all plots, green bars (0.0) consistently represent a larger group compared to orange bars (1.0), indicating more individuals without diabetes. The black lines indicate the proportion of diabetics within each category, providing insights into the relationship between these factors and diabetes prevalence.
+
+![image](https://github.com/user-attachments/assets/1fff8f49-c210-4ca6-a25f-2e8a43a3a841)
+
+The image is a correlation heatmap showing the relationships between various features in the dataset, such as Diabetes_binary, HighBP, HighChol, CholCheck, BMI, Smoker, Stroke, HeartDiseaseorAttack, PhysActivity, Fruits, Veggies, HvyAlcoholConsump, AnyHealthcare, NoDocbcCost, GenHlth, MentHlth, PhysHlth, DiffWalk, Sex, Age, Education, and Income.
+
+Key Points:
+
+Correlation Coefficients:
+
+Range from -1 to 1, indicating the strength and direction of relationships.
+Positive values indicate a direct relationship, negative values an inverse relationship.
+Color Scale:
+
+Dark red indicates high positive correlation, yellow indicates low or negative correlation.
+Darker colors show stronger correlations.
+Notable Correlations:
+
+HighBP and HeartDiseaseorAttack: 0.63
+BMI and HighBP: 0.28
+Age and PhysActivity: -0.24
+Education and Income: 0.42
+Diabetes_binary:
+
+Positive correlation with HighBP (0.25) and BMI (0.19).
+Negative correlation with Veggies (-0.06) and Fruits (-0.025), suggesting higher consumption is linked to lower diabetes prevalence.
+
+![image](https://github.com/user-attachments/assets/e3efa88b-3f9a-4892-826b-cde6a03c2397)
+The box plot compares the ages of individuals with and without diabetes (Diabetes_binary).
+
+No Diabetes (0.0):
+
+Green box.
+Median age: ~8.
+IQR: 6 to 10.
+Whiskers: 2 to 12.
+With Diabetes (1.0):
+
+Orange box.
+Median age: ~10.
+IQR: 8 to 12.
+Whiskers: 4 to 13, with outliers below 4.
+Overall, individuals with diabetes are generally older, indicated by the higher median and IQR.
+
+![image](https://github.com/user-attachments/assets/b0ea4ce4-0f39-4377-afa7-bac0d0cc8984)
+
+# Conclusion
+Low Multicollinearity: The VIF values for all features are below 2, suggesting that there is low multicollinearity in this dataset. This is good for regression models, as it implies that the features are relatively independent of each other.
+Feature Selection: Since multicollinearity is low, all features can be included in regression models without the risk of inflated standard errors or unstable coefficient estimates.
+
+
+![image](https://github.com/user-attachments/assets/8b9fc8b7-c12c-4d62-a077-efa1fff1328f)
+
+High Importance Features: Features like Diabetes_binary, PhysHlth, BMI, MentHlth, and Age have high scores, indicating strong predictive power.
+Low Importance Features: Features like CholCheck, AnyHealthcare, and Sex have low scores and are thus dropped from the dataset.
+
+
+
+
+
+
+
+
+
+
 
 
 
