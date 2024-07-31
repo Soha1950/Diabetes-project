@@ -6,17 +6,15 @@ This project aims to predict diabetes using various health indicators. The datas
 Project Overview
 The project involves the use of a dataset containing health indicators to predict diabetes status. The dataset includes various attributes such as blood pressure, cholesterol levels, body mass index (BMI), smoking status, physical activity, and other health-related metrics. By analyzing this dataset, we aim to understand the relationships between these health indicators and the presence of diabetes.
 
-#### Goals
-Data Exploration and Cleaning: Perform exploratory data analysis (EDA) to understand the dataset and clean the data by handling missing values and removing duplicates.
-# Feature Analysis:
+## Goals
+Data Exploration and Cleaning: Perform exploratory data analysis (EDA) to understand the dataset and clean the data by handling missing values and removing duplicates. Feature Analysis:
 Analyze the distribution and significance of each feature in relation to the target variable (diabetes status).
 
-# Model Training:
+Model Training:
 Train multiple machine learning models to predict diabetes status, including, KNeighborsClassifier, DecisionTreeClassifier, LogisticRegression, and SVC.
 Based on the provided metrics, the Gradient Boosting Classifier appears to be the best-performing model overall. Here are the key points that support this conclusion:
 
-## High Accuracy:
-
+High Accuracy:
 The Gradient Boosting Classifier has an overall accuracy of 0.85, which is on par with the best performing models.
 Balanced Performance:
 
@@ -120,29 +118,27 @@ In all plots, green bars (0.0) consistently show a larger group compared to oran
 
 This chart contains eight bar plots, each illustrating the count of diabetes cases (Diabetes_binary) by various demographic and lifestyle factors: Age, Sex, Education, Income, PhysActivity, Fruits, Veggies, and HvyAlcoholConsump.
 
-# Age:
+### Age:
 
 The distribution of diabetes cases by age, segmented into different age groups.
 Green bars (0.0) indicate non-diabetics, and orange bars (1.0) indicate diabetics.
 The black line shows the proportion of diabetics across age groups, with a noticeable increase in older age groups.
-# Sex:
+### Sex:
 Shows the count of diabetes cases by sex.
 More individuals without diabetes in both male and female groups.
-# Education:
+### Education:
 Displays the distribution of diabetes cases by education level.
 The highest counts are among individuals with lower education levels.
-# Income:
+### Income:
 Shows the count of diabetes cases by income level.
 Higher income levels generally have fewer diabetes cases.
-# PhysActivity (Physical Activity):
-
+### PhysActivity (Physical Activity):
 Illustrates the count of diabetes cases based on physical activity.
 Individuals with physical activity (1.0) have fewer diabetes cases.
-# Fruits:
-
+### Fruits:
 Shows the distribution of diabetes cases based on fruit consumption.
 More individuals who consume fruits (1.0) do not have diabetes.
-# Veggies:
+### Veggies:
 
 Displays the count of diabetes cases based on vegetable consumption.
 Higher vegetable consumption (1.0) is associated with fewer diabetes cases.
@@ -205,17 +201,6 @@ Feature Selection: Since multicollinearity is low, all features can be included 
 
 High Importance Features: Features like Diabetes_binary, PhysHlth, BMI, MentHlth, and Age have high scores, indicating strong predictive power.
 Low Importance Features: Features like CholCheck, AnyHealthcare, and Sex have low scores and are thus dropped from the dataset.
-
-
-
-
-
-
-
-
-
-
-
 
 
 [the dataset can be found at the](https://www.archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators)
