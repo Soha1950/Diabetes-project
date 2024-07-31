@@ -6,7 +6,7 @@ This project aims to predict diabetes using various health indicators. The datas
 Project Overview
 The project involves the use of a dataset containing health indicators to predict diabetes status. The dataset includes various attributes such as blood pressure, cholesterol levels, body mass index (BMI), smoking status, physical activity, and other health-related metrics. By analyzing this dataset, we aim to understand the relationships between these health indicators and the presence of diabetes.
 
-# Goals
+#### Goals
 Data Exploration and Cleaning: Perform exploratory data analysis (EDA) to understand the dataset and clean the data by handling missing values and removing duplicates.
 # Feature Analysis:
 Analyze the distribution and significance of each feature in relation to the target variable (diabetes status).
