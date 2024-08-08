@@ -45,6 +45,7 @@ Precision, Recall, F1-Score for class 1: 0.29, 0.32, 0.31
 Accuracy: 0.78
 Macro Avg Precision, Recall, F1-Score: 0.58, 0.59, 0.59
 Weighted Avg Precision, Recall, F1-Score: 0.78, 0.78, 0.78
+![image](https://github.com/user-attachments/assets/89b98cfd-f614-4fbe-a4c7-f4ba0c5a841d)
 
 ## Logistic Regression
 Training Set Score: 0.8507
@@ -55,6 +56,7 @@ Precision, Recall, F1-Score for class 1: 0.53, 0.14, 0.22
 Accuracy: 0.85
 Macro Avg Precision, Recall, F1-Score: 0.70, 0.56, 0.57
 Weighted Avg Precision, Recall, F1-Score: 0.81, 0.85, 0.81
+![image](https://github.com/user-attachments/assets/6373be4b-1b43-4886-9db2-734db80f60b7)
 
 ## K-Neighbors Classifier
 Training Set Score: 0.8768
@@ -65,6 +67,7 @@ Precision, Recall, F1-Score for class 1: 0.40, 0.21, 0.27
 Accuracy: 0.83
 Macro Avg Precision, Recall, F1-Score: 0.64, 0.58, 0.59
 Weighted Avg Precision, Recall, F1-Score: 0.80, 0.83, 0.81
+![image](https://github.com/user-attachments/assets/90b066a9-779a-471d-9134-12811a7381ef)
 
 ## Gradient Boosting Classifier
 Training Set Score: Not provided, but assumed to be close to 0.85 based on accuracy.
@@ -75,6 +78,75 @@ Precision, Recall, F1-Score for class 1: 0.57, 0.16, 0.24
 Accuracy: 0.85
 Macro Avg Precision, Recall, F1-Score: 0.72, 0.57, 0.58
 Weighted Avg Precision, Recall, F1-Score: 0.82, 0.85, 0.81
+![image](https://github.com/user-attachments/assets/767b9819-d9e1-4b94-91c7-5091b331f616)
+
+
+
+# Deep Neural Network Model Description
+Model Architecture
+The Deep Neural Network (DNN) model is built using TensorFlow and Keras with the following layers:
+
+![image](https://github.com/user-attachments/assets/cda51e5c-f60f-42a1-9350-95416b26f103)
+
+
+Input Layer:
+Dense(64, activation='relu', input_shape=(18,))
+Fully connected with 64 neurons, ReLU activation, and input shape of 18 features.
+Hidden Layers:
+Dense(32, activation='relu')
+Dense(16, activation='relu')
+Dense(12, activation='relu')
+Three fully connected layers with 32, 16, and 12 neurons, all using ReLU activation.
+Output Layer:
+Dense(1, activation='sigmoid')
+Single neuron with sigmoid activation for binary classification.
+Model Compilation
+Loss Function: binary_crossentropy (suitable for binary classification)
+Optimizer: Adam (adaptive learning rate optimization)
+Metrics: accuracy and AUC (Area Under the Curve)
+Model Training
+Epochs: 100
+Batch Size: 64
+Validation Data: X_test and y_test
+Model Evaluation
+Accuracy: Approximately 84.46% on the test set.
+AUC: Ranged from 0.7984 to 0.8371 during training, indicating good class distinction.
+Classification Report and Confusion Matrix
+Class 0 (non-diabetic):
+Precision: 0.86
+Recall: 0.98
+F1-Score: 0.92
+Class 1 (diabetic):
+Precision: 0.57
+Recall: 0.16
+F1-Score: 0.24
+Confusion Matrix:
+
+True Positives (TP): 58250
+True Negatives (TN): 10593
+False Positives (FP): 829
+False Negatives (FN): 1762
+Conclusion
+The DNN model achieves a high overall accuracy of 84.46%. However, it has a notable imbalance in performance, particularly with lower recall for the diabetic class, indicating difficulty in correctly identifying diabetic cases. Further tuning and addressing class imbalance in the dataset may be necessary to improve recall for the diabetic class.
+
+## Comparison of Machine Learning Models and a Neural Network for Diabetes Prediction
+Introduction
+In this analysis, we evaluated the performance of several machine learning models and a neural network on the task of predicting diabetes. The models evaluated include Logistic Regression, Decision Tree, K-Nearest Neighbors (KNN), Gradient Boosting, and a Deep Neural Network (DNN). We used various performance metrics such as accuracy, precision, recall, F1-score, and confusion matrices to compare these models.
+
+Discussion
+The performance of the models shows that while traditional machine learning models like Logistic Regression and Gradient Boosting perform quite well with accuracies around 86-87%, the neural network also provides competitive performance with an accuracy of 84.46%.
+
+Logistic Regression and Gradient Boosting achieved the highest accuracy, with Logistic Regression showing the highest recall for Class 0 (0.98) but lower for Class 1 (0.16).
+KNN and the DNN had similar performance, with a slight edge in recall for Class 0 but lower for Class 1.
+Decision Tree performed the worst in terms of accuracy and recall, particularly for Class 1, which suggests it might not be the best choice for this binary classification problem.
+Overall, while the neural network did not significantly outperform the traditional models, it demonstrated robust performance. The choice of the model can depend on specific requirements such as the need for interpretability (favoring Logistic Regression) or the capability to handle complex patterns (favoring DNN).
+
+Conclusion
+In this analysis, we found that Logistic Regression and Gradient Boosting classifiers performed the best among the models tested for predicting diabetes. The Deep Neural Network, while not outperforming the traditional models, showed competitive accuracy, making it a viable option depending on the use case. Further tuning of the neural network and exploration of different architectures could potentially enhance its performance.
+
+
+
+
 # Visualization: 
 Create visualizations to illustrate the distribution of the target variable and the relationships between features and the target.
 Optimization: Fine-tune the models to improve their performance and select the best model for predicting diabetes status
