@@ -45,6 +45,7 @@ Precision, Recall, F1-Score for class 1: 0.29, 0.32, 0.31
 Accuracy: 0.78
 Macro Avg Precision, Recall, F1-Score: 0.58, 0.59, 0.59
 Weighted Avg Precision, Recall, F1-Score: 0.78, 0.78, 0.78
+
 ![image](https://github.com/user-attachments/assets/89b98cfd-f614-4fbe-a4c7-f4ba0c5a841d)
 
 ## Logistic Regression
@@ -56,6 +57,7 @@ Precision, Recall, F1-Score for class 1: 0.53, 0.14, 0.22
 Accuracy: 0.85
 Macro Avg Precision, Recall, F1-Score: 0.70, 0.56, 0.57
 Weighted Avg Precision, Recall, F1-Score: 0.81, 0.85, 0.81
+
 ![image](https://github.com/user-attachments/assets/6373be4b-1b43-4886-9db2-734db80f60b7)
 
 ## K-Neighbors Classifier
@@ -67,6 +69,7 @@ Precision, Recall, F1-Score for class 1: 0.40, 0.21, 0.27
 Accuracy: 0.83
 Macro Avg Precision, Recall, F1-Score: 0.64, 0.58, 0.59
 Weighted Avg Precision, Recall, F1-Score: 0.80, 0.83, 0.81
+
 ![image](https://github.com/user-attachments/assets/90b066a9-779a-471d-9134-12811a7381ef)
 
 ## Gradient Boosting Classifier
@@ -78,6 +81,7 @@ Precision, Recall, F1-Score for class 1: 0.57, 0.16, 0.24
 Accuracy: 0.85
 Macro Avg Precision, Recall, F1-Score: 0.72, 0.57, 0.58
 Weighted Avg Precision, Recall, F1-Score: 0.82, 0.85, 0.81
+
 ![image](https://github.com/user-attachments/assets/767b9819-d9e1-4b94-91c7-5091b331f616)
 
 
