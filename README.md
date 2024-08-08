@@ -58,7 +58,8 @@ Accuracy: 0.85
 Macro Avg Precision, Recall, F1-Score: 0.70, 0.56, 0.57
 Weighted Avg Precision, Recall, F1-Score: 0.81, 0.85, 0.81
 
-![image](https://github.com/user-attachments/assets/6373be4b-1b43-4886-9db2-734db80f60b7)
+![image](https://github.com/user-attachments/assets/1b44a626-896e-4b15-8b20-fa2a84ee3c39)
+
 
 ## K-Neighbors Classifier
 Training Set Score: 0.8768
@@ -84,6 +85,46 @@ Weighted Avg Precision, Recall, F1-Score: 0.82, 0.85, 0.81
 
 ![image](https://github.com/user-attachments/assets/767b9819-d9e1-4b94-91c7-5091b331f616)
 
+# Comparative Analysis of Model Performance Metrics
+
+![image](https://github.com/user-attachments/assets/cedd9498-1969-4d94-9915-30a347caef75)
+
+The grouped bar chart above compares accuracy, precision, recall, and F1 score across five machine learning models. Here is a brief analysis of each model's performance:
+
+##### Logistic Regression
+Accuracy: High, close to 0.87
+Precision: Moderate, around 0.54
+Recall: Low, around 0.16
+F1 Score: Low, around 0.24
+Summary: Performs well in accuracy but struggles with recall and F1 score for diabetic cases, indicating it may not effectively identify diabetic cases.
+#### Decision Tree
+Accuracy: Moderate, around 0.80
+Precision: Low, around 0.29
+Recall: Moderate, around 0.32
+F1 Score: Low, around 0.31
+Summary: Lowest overall performance, with moderate accuracy and low precision, recall, and F1 score.
+#### K-Nearest Neighbors (KNN)
+Accuracy: Moderate, around 0.85
+Precision: Moderate, around 0.39
+Recall: Low, around 0.21
+F1 Score: Low, around 0.27
+Summary: Decent accuracy but low precision, recall, and F1 score, indicating limited effectiveness in distinguishing between diabetic and non-diabetic cases.
+Support Vector Machine (SVM)
+Accuracy: High, around 0.87
+Precision: High, around 0.88
+Recall: Very high, around 0.98
+F1 Score: High, around 0.93
+Summary: Top performer with high accuracy, precision, recall, and F1 score, indicating strong classification ability for both diabetic and non-diabetic cases.
+#### Gradient Boosting
+Accuracy: High, around 0.87
+Precision: Moderate, around 0.56
+Recall: Low, around 0.17
+F1 Score: Low, around 0.26
+Summary: High accuracy but lower precision, recall, and F1 score compared to SVM, indicating good overall performance but less effective in identifying diabetic cases.
+Conclusion
+Good Performance: Logistic Regression and Gradient Boosting with good accuracy but lower recall and F1 scores.
+Improvement Needed: Decision Tree and KNN models with moderate accuracy but lower precision, recall, and F1 scores.
+This comparative analysis highlights the strengths and weaknesses of each model, providing insights into which model is best suited for diabetes prediction and where improvements can be made.
 
 
 # Deep Neural Network Model Description
