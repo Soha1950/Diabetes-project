@@ -371,5 +371,5 @@ Income: Income level.
 For more details, visit the UCI Machine Learning Repository.
 
 
-![image](https://github.com/user-attachments/assets/5dcb9e73-7b74-4cbf-9441-b31873a4b221)
+
 
